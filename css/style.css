@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+}
+
+:root{
+	--mainbgcolor: hsl(222, 26%, 31%);
+	--mainbg1color: hsl(0, 0%, 90%);
+	--mainbg2color: hsl(268, 75%, 9%);
+	--twotkbg: hsl(0, 5%, 81%);
+	--tbgkbgsbg: hsl(268, 71%, 12%);
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--mainbgcolor);	
+}
+.wrapper{
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.header h3{
+	color: white;
+}
+.control{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.control p{
+	margin-top: 5px;
+	color: white;
+	text-transform: uppercase;
+}
+.control .box{
+	width: 65px;
+	height: 23px;
+	background-color: hsl(223, 31%, 20%);
+	border-radius: 30px;
+	position: relative;
+}
+.control #circle{
+	width: 18px;
+	height: 18px;
+	background-color: hsl(6, 63%, 50%);
+	position: absolute;
+	top: 2px;
+	left: 3.5px;
+	z-index: 1;
+	border-radius: 30px;
+}
+.the-screen{
+	width: 450px;
+	margin-bottom: 1rem;
+}
+#screen{
+	width: 100%;
+	height: 100px;
+	border: none;
+	outline: none;
+	background-color: hsl(224, 36%, 15%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	border-radius: 7px;
+	font-size: 32px;
+	color: white;
+	text-align: right;
+}
+.all-buttons{
+	width: 450px;
+	height: 390px;
+	background-color: hsl(223, 31%, 20%);
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+}
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1rem;
+}
+.button{
+	width: 100%;
+	height: 55px;
+	border-radius: 10px;
+	background-color: hsl(30, 25%, 89%);
+	box-shadow:  0px 3px 0px 0px hsl(28, 16%, 65%);
+	color: hsl(221, 14%, 31%);
+	/* padding: 1rem; */
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border: none;
+	outline: none;
+}
+
+#Del, #reset{
+	background-color: hsl(225, 21%, 49%);
+	color: white;
+	box-shadow:  0px 3px 0px 0px hsl(224, 28%, 35%);
+}
+#equal{
+	background-color: hsl(6, 63%, 50%);
+	color: white;
+	box-shadow:  0px 3px 0px 0px hsl(6, 70%, 34%);
+}
+
+/* Media Query */
+@media screen and (max-width: 500px){
+	.wrapper{
+		width: 400px;
+	}
+	.the-screen{
+		width: 400px;
+	}
+	.all-buttons{
+		width: 400px;
+	}
+}
+@media screen and (max-width: 400px){
+	.header h3{
+		font-size: 15px;
+	}
+	.control p{
+		font-size: 12px;
+	}
+	.all-buttons{
+		padding: 0.5rem;
+	}
+	.wrapper{
+		width: 380px;
+	}
+	.the-screen{
+		width: 380px;
+	}
+	.all-buttons{
+		width: 380px;
+	}
+}
+@media screen and (max-width: 380px){
+	.wrapper{
+		width: 350px;
+	}
+	.the-screen{
+		width: 350px;
+	}
+	.all-buttons{
+		width: 350px;
+	}
+	.button{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 350px){
+	.wrapper{
+		width: 300px;
+	}
+	.the-screen{
+		width: 300px;
+	}
+	.all-buttons{
+		width: 300px;
+	}
+	.button{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 300px){
+	.container{
+		padding: 1rem;
+	}
+	.wrapper{
+		width: 280px;
+	}
+	.the-screen{
+		width: 280px;
+	}
+	.all-buttons{
+		width: 280px;
+		height: 350px;
+		gap: 0.9rem;
+	}
+	.button{
+		font-size: 16px;
+	}
+	
+}
