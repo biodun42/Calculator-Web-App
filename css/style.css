@@ -6,6 +6,12 @@
 	font-family: 'Spartan', sans-serif;
 	font-weight: 700;
 }
+body{
+	overflow:auto;
+	background-color: var(--mainbgcolor);
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
 
 :root{
 	--mainbgcolor: hsl(222, 26%, 31%);
@@ -17,11 +23,10 @@
 
 .container{
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--mainbgcolor);	
+	
 }
 .wrapper{
 	width: 450px;
