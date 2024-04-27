@@ -13,8 +13,15 @@
           <h3>CALC</h3>
           <div class="control">
             <p>Theme</p>
+            <div class="toggles">
+              <div class="toggle">
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+              </div>
             <div class="box">
               <div id="circle"></div>
+            </div>
             </div>
           </div>
         </div>
@@ -28,7 +35,7 @@
             <button onclick="document.calc.text.value+='7'" class="button" id="seven">7</button>
             <button onclick="document.calc.text.value+='8'" class="button" id="eight">8</button>
             <button onclick="document.calc.text.value+='9'" class="button" id="nine">9</button>
-            <button class="button" id="Del">DEL</button>
+            <button onclick="del()" class="button" id="Del">DEL</button>
           </div>
           <div class="row">
             <button onclick="document.calc.text.value+='4'" class="button" id="four">4</button>
@@ -42,8 +49,8 @@
             <button onclick="document.calc.text.value+='3'" class="button" id="three">3</button>
             <button onclick="document.calc.text.value+='-'" class="button" id="subtract">-</button>
           </div>
-          <div class="row">
-            <button class="button" id="dot">.</button>
+          <div class="row"> 
+            <button onclick="document.calc.text.value+='.'" class="button" id="dot">.</button>
             <button onclick="document.calc.text.value+='0'" class="button" id="zero">0</button>
             <button onclick="document.calc.text.value+='/'" class="button" id="divide">/</button>
             <button onclick="document.calc.text.value+='*'" class="button" id="multiply">x</button>
