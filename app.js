@@ -6,16 +6,16 @@ function del() {
 
 let two = document.getElementById("two");
 two.addEventListener("click", function () {
-  let body = document.querySelector('body');
+  let body = document.querySelector("body");
   let toggle = document.getElementById("circle");
   body.classList.add("active1");
   body.classList.remove("active2");
   toggle.style.left = "36%";
 });
 
-let one = document.getElementById('one');
+let one = document.getElementById("one");
 one.addEventListener("click", function () {
-  let body = document.querySelector('body');
+  let body = document.querySelector("body");
   let toggle = document.getElementById("circle");
   body.classList.remove("active1");
   body.classList.remove("active2");
@@ -24,7 +24,7 @@ one.addEventListener("click", function () {
 
 let three = document.getElementById("three");
 three.addEventListener("click", function () {
-  let body = document.querySelector('body');
+  let body = document.querySelector("body");
   let toggle = document.getElementById("circle");
   body.classList.add("active2");
   body.classList.remove("active1");
